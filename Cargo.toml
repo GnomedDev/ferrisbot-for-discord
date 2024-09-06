@@ -19,8 +19,10 @@ serde = { version = "1.0", features = ["derive"] }
 serde_json = "1.0"
 sqlx = { version = "0.7.0", features = ["runtime-tokio-native-tls", "postgres", "macros"] }
 reqwest = { version = "0.11", default-features = false, features = ["json", "rustls-tls"] }
-image = { version = "0.24", default-features = false, features = ["png"] } # get a better computer meme rendering
-imageproc = { version = "0.23", default-features = false } # get a better computer meme rendering
-rusttype = { version = "0.9", default-features = false } # interact with imageproc
 rand = "0.8.5"
 syn = { version = "2.0.68", features = ["full"] }
+
+# get a better computer meme rendering
+image = { version = "0.25", default-features = false, features = ["png"] }
+imageproc = { version = "0.25", default-features = false }
+ab_glyph = "0.2"
